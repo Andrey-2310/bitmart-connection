@@ -1,0 +1,21 @@
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: admin
+#    password: iamarabbit
+#  cloud:
+#    stream:
+#      bindings:
+#        orderBook:
+#          destination: common.order-book-input.fx
+#        orderBookChange:
+#          destination: common.order-book-change-input.fx
+#      rabbit:
+#        bindings:
+#          orderBook:
+#            producer:
+#              exchangeType: direct
+#          orderBookChange:
+#            producer:
+#              exchangeType: direct
